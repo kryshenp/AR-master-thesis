@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html class = "js csstransitions">
+     <head>
+        <title>Alte Ungwar</title>
+        <meta charset="utf-8"></meta>
+
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet" type="text/css"></link>
+        <style type="text/css">
+            .gm-style .gm-style-cc span,.gm-style .gm-style-cc a,.gm-style .gm-style-mtc div{font-size:10px}
+        </style>
+        <style type="text/css">
+            @media print {  .gm-style .gmnoprint, .gmnoprint {    display:none  }}@media screen {  .gm-style .gmnoscreen, .gmnoscreen {    display:none  }}
+        </style>
+        <style type="text/css">.gm-style{font-family:Roboto,Arial,sans-serif;font-size:11px;font-weight:400;text-decoration:none}.gm-style img{max-width:none}
+        </style>
+
+        <script style="" src="//www.google-analytics.com/analytics.js" async=""></script>
+       
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700"></link>
+        <link rel="stylesheet" type="text/css" href="css/grid.css"></link>
+        <link rel="stylesheet" type="text/css" href="css/viewer.css"></link>
+        <link rel="stylesheet" type="text/css" href="css/octicons.css"></link>
+
+        <meta property="fb:app_id" content="598168753565519"></meta>
+        <meta property="og:title" content="Ungwar"></meta>
+        <meta property="og:site_name" content="Alte Ungwar"></meta>
+        <meta property="og:type" content="website"></meta>
+        <meta property="og:url" content="http://www.oldnyc.org/"></meta>
+        <meta property="og:description" content="OldNYC shows 40,000 historical images from the New York Public Library's Milstein Collection on a map. Find photos of your apartment, work, or favorite park!"></meta>
+        <meta property="og:image" content="http://oldnyc-assets.nypl.org/600px/723905f-a.jpg"></meta>
+        <meta name="Description" content="OldNYC shows 40,000 historical images from the New York Public Library's Milstein Collection on a map. Find photos of your apartment, work, or favorite park!"></meta>
+
+
+        <script src="//connect.facebook.net/en_US/sdk.js" id="facebook-jssdk"></script>
+        <script src="https://cdn.firebase.com/js/client/2.3.0/firebase.js"></script>
+        <script src="https://maps.googleapis.com/maps-api-v3/api/js/23/0/intl/cs_ALL/common.js" charset="UTF-8" type="text/javascript"></script>
+        <script src="https://maps.googleapis.com/maps-api-v3/api/js/23/0/intl/cs_ALL/map.js" charset="UTF-8" type="text/javascript"></script>
+        <script src="https://platform.twitter.com/js/button.c44c2dc193c555561d5830b3b543eb26.js" async="" charset="utf-8" type="text/javascript"></script>
+        <script src="https://maps.googleapis.com/maps-api-v3/api/js/23/0/intl/cs_ALL/util.js" charset="UTF-8" type="text/javascript"></script>
+        <script src="https://maps.googleapis.com/maps-api-v3/api/js/23/0/intl/cs_ALL/onion.js" charset="UTF-8" type="text/javascript"></script>
+        <script src="https://maps.googleapis.com/maps-api-v3/api/js/23/0/intl/cs_ALL/stats.js" charset="UTF-8" type="text/javascript"></script>
+        <script src="https://maps.googleapis.com/maps-api-v3/api/js/23/0/intl/cs_ALL/controls.js" charset="UTF-8" type="text/javascript"></script>
+        <script src="https://maps.googleapis.com/maps-api-v3/api/js/23/0/intl/cs_ALL/marker.js" charset="UTF-8" type="text/javascript"></script>
+
+
+
+        
+        <!-- ENTER YOUR KEY FOR GOOGE MAP API-->
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+          
+        <script type="text/javascript"src="js/map.js"></script>
+
+       </script>
+
+        <style type="text/css">
+            .fb_hidden{position:absolute;top:-10000px;z-index:10001}
+            .fb_reposition{overflow-x:hidden;position:relative}
+            .fb_invisible{display:none}
+            .fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}
+            .fb_reset>div{overflow:hidden}
+            .fb_link img{border:none}
+            .fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}
+            .fb_reset .fb_dialog_legacy{overflow:visible}
+            .fb_dialog_advanced{padding:10px;-moz-border-radius:8px;-webkit-border-radius:8px;border-radius:8px}
+            .fb_dialog_content{background:#fff;color:#333}
+            .fb_dialog_close_icon{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;_background-image:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif);cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}
+            .fb_dialog_mobile .fb_dialog_close_icon{top:5px;left:5px;right:auto}
+            .fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}
+            .fb_dialog_close_icon:hover{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent;_background-image:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif)}
+            .fb_dialog_close_icon:active{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent;_background-image:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif)}
+            .fb_dialog_loader{background-color:#f6f7f8;border:1px solid #606060;font-size:24px;padding:20px}
+            .fb_dialog_top_left, .fb_dialog_top_right, .fb_dialog_bottom_left, .fb_dialog_bottom_right{height:10px;width:10px;overflow:hidden;position:absolute}
+            .fb_dialog_top_left{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 0;left:-10px;top:-10px}
+            .fb_dialog_top_right{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -10px;right:-10px;top:-10px}
+            .fb_dialog_bottom_left{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -20px;bottom:-10px;left:-10px}
+            .fb_dialog_bottom_right{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -30px;right:-10px;bottom:-10px}
+            .fb_dialog_vert_left, .fb_dialog_vert_right, .fb_dialog_horiz_top, .fb_dialog_horiz_bottom{position:absolute;background:#525252;filter:alpha(opacity=70);opacity:.7}
+            .fb_dialog_vert_left, .fb_dialog_vert_right{width:10px;height:100%}
+            .fb_dialog_vert_left{margin-left:-10px}
+            .fb_dialog_vert_right{right:0;margin-right:-10px}
+            .fb_dialog_horiz_top, .fb_dialog_horiz_bottom{width:100%;height:10px}
+            .fb_dialog_horiz_top{margin-top:-10px}
+            .fb_dialog_horiz_bottom{bottom:0;margin-bottom:-10px}
+            .fb_dialog_iframe{line-height:0}
+            .fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #3a5795;color:#fff;font-size:14px;font-weight:bold;margin:0}
+            .fb_dialog_content .dialog_title>span{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body
+            .fb_hidden{-webkit-transform:none;height:100%;margin:0;overflow:visible;position:absolute;top:-10000px;left:0;width:100%}
+            .fb_dialog.fb_dialog_mobile .loading{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}
+            .fb_dialog.fb_dialog_mobile.loading.centered{width:auto;height:auto;min-height:initial;min-width:initial;background:none}
+            .fb_dialog.fb_dialog_mobile.loading.centered 
+            #fb_dialog_loader_spinner{width:100%}
+            .fb_dialog.fb_dialog_mobile.loading.centered 
+            .fb_dialog_content{background:none}
+            .loading.centered 
+            #fb_dialog_loader_close{color:#fff;display:block;padding-top:20px;clear:both;font-size:18px}
+            #fb-root 
+            #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .45);position:absolute;left:0;top:0;width:100%;min-height:100%;z-index:10000}
+            #fb-root 
+            #fb_dialog_ipad_overlay.hidden{display:none}
+            .fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}
+            .fb_dialog_content 
+            .dialog_header{-webkit-box-shadow:white 0 1px 1px -1px inset;background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#738ABA), to(#2C4987));border-bottom:1px solid;border-color:#1d4088;color:#fff;font:14px Helvetica, sans-serif;font-weight:bold;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}
+            .fb_dialog_content .dialog_header table{-webkit-font-smoothing:subpixel-antialiased;height:43px;width:100%}
+            .fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}
+            .fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}
+            .fb_dialog_content .touchable_button{background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#4966A6), color-stop(.5, #355492), to(#2A4887));border:1px solid #2f477a;-webkit-background-clip:padding-box;-webkit-border-radius:3px;-webkit-box-shadow:rgba(0, 0, 0, .117188) 0 1px 1px inset, rgba(255, 255, 255, .167969) 0 1px 0;display:inline-block;margin-top:3px;max-width:85px;line-height:18px;padding:4px 12px;position:relative}
+            .fb_dialog_content .dialog_header .touchable_button input{border:none;background:none;color:#fff;font:12px Helvetica, sans-serif;font-weight:bold;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}
+            .fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}
+            .fb_dialog_content .dialog_content{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #555;border-bottom:0;border-top:0;height:150px}
+            .fb_dialog_content .dialog_footer{background:#f6f7f8;border:1px solid #555;border-top-color:#ccc;height:40px}
+            #fb_dialog_loader_close{float:left}
+            .fb_dialog .fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}
+            .fb_dialog .fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}
+            #fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yD/r/t-wz8gw1xG1.png);background-repeat:no-repeat;background-position:50% 50%;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+            .fb_iframe_widget{display:inline-block;position:relative}
+            .fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}
+            .fb_iframe_widget iframe{position:absolute}
+            .fb_iframe_widget_fluid_desktop,
+            .fb_iframe_widget_fluid_desktop span,
+            .fb_iframe_widget_fluid_desktop iframe{max-width:100%}
+            .fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}
+            .fb_iframe_widget_lift{z-index:1}
+            .fb_hide_iframes iframe{position:relative;left:-10000px}
+            .fb_iframe_widget_loader{position:relative;display:inline-block}
+            .fb_iframe_widget_fluid{display:inline}
+            .fb_iframe_widget_fluid span{width:100%}
+            .fb_iframe_widget_loader iframe{min-height:32px;z-index:2;zoom:1}
+            .fb_iframe_widget_loader .FB_Loader{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif) no-repeat;height:32px;width:32px;margin-left:-16px;position:absolute;left:50%;z-index:4}
+        </style>
+    </head>
+    <body>
+
+        
+    <div class="" style="" id="expanded">
+        <div class="curtains"></div>   <!--EV-->
+
+        
+        <!--HEADER-->
+        <div class="header">    <!--EV-->
+             <!--div logo-->
+            <div class="logo">
+                 <!--div of logo text-->
+                <div class="wrapper">
+                    <a class="exit" href="#">Ungwar</a>
+                </div>
+            </div>
+             <!--Div of exit slideshow button-->
+            <div id="exit-slideshow" class="exit" title="Exit Slideshow">✕</div>    <!--EV-->
+        </div>
+
+        <!--Controls of modal window-->
+        <div id="expanded-controls">
+            <!--MAP OF LOCATION, CLICK ON MAP AND WE WILL EXIT SLIDESHOW--> <!--EV-->
+            <img id="preview-map" class="exit" title="Exit Slideshow" src="http://maps.googleapis.com/maps/api/staticmap?center=40.749604,-73.985703&amp;zoom=15&amp;size=150x150&amp;maptype=roadmap&amp;markers=color:red%7C40.749604,-73.985703&amp;style=&amp;style=visibility:off&amp;style=feature:water%7Cvisibility:simplified&amp;style=feature:poi%7Cvisibility:simplified&amp;style=feature:transit%7Cvisibility:off&amp;style=feature:landscape%7Cvisibility:simplified&amp;style=feature:road%7Cvisibility:simplified&amp;style=feature:administrative%7Cvisibility:simplified&amp;style=feature:administrative%7Celement:labels%7Cvisibility:off&amp;style=feature:administrative.country%7Celement:geometry.stroke%7Cvisibility:off&amp;style=feature:administrative.province%7Celement:geometry.stroke%7Cvisibility:off&amp;style=feature:landscape%7Celement:geometry%7Cvisibility:on%7Ccolor:0xe3e3e3&amp;style=feature:landscape.natural%7Celement:labels%7Cvisibility:off&amp;style=feature:poi%7Celement:all%7Cvisibility:off&amp;style=feature:road%7Celement:all%7Ccolor:0xcccccc&amp;style=feature:water%7Celement:geometry%7Ccolor:0xFFFFFF&amp;style=feature:road%7Celement:labels%7Ccolor:0x94989C%7Cvisibility:simplified&amp;style=feature:water%7Celement:labels%7Cvisibility:off" height="150" width="150">
+            <!--CONTAINER FOR THE SMALL MAP-->
+            <div class="location"></div>
+            <div class="location">Manhattan 37th Street Lexington Avenue</div>
+            <!--NYPL LOGO, CLICK ON THE LOGO AND YOU WILL GET TO THE THIS PICTURE NYPL PAGE-->
+            <div class="nypl-logo">
+                <a href="http://digitalcollections.nypl.org/items/image_id/1558150" target="_blank"><img src="http://www.oldnyc.org/images/nypl_logo.png" height="75" border="0" width="127"></a>
+            </div>
+        </div>
+
+
+        <!--And FINALLY grid container-->
+
+        <div id="grid-container">
+            <!--GRID OF pictures small icons-->
+            <ul class="og-grid">
+                <!--First picture expanded-->
+                <li class="og-expanded" style="transition: height 200ms ease 0s; height: 395px;">
+                    <!--First Picture Icon-->
+                    <a href="#" data-largesrc="http://oldnyc-assets.nypl.org/600px/1558150.jpg"><img src="http://oldnyc-assets.nypl.org/thumb/1558150.jpg" height="200" width="140"></a>
+
+                    <!-- FIRST Picture EXPANDED, Text and Fb interface etc. container-->
+                    <div style="transition: height 200ms ease 0s; height: 440px;" class="og-expander">
+                        <!-- INNER SPACE OF FIRST Picture EXPANDED, Text and Fb interface etc. container-->
+                        <div class="og-expander-inner">
+                            <!-- Closing modal window with <span> tag-->
+                            <span class="og-close"></span>
+
+                            <!-- Window of BIG Picture and rotate tool-->
+                            <div class="og-fullimg">
+                                <!-- Loading picture screen-->
+                                <div style="display: none;" class="og-loading"></div>
+                                <!-- Big Image itself-->
+                                <img style="display: inline;" src="http://oldnyc-assets.nypl.org/600px/1558150.jpg">    <!--EV-->
+                                <!-- When we click on the image-->
+                                <div class="og-details-left" style="">
+                                    <div style="display: block;">
+                                        <!-- When we click on the image we will go to nzpl page of this picture
+                                        in my case it will be this picture in big resolution-->
+                                        <div class="nypl-link"><a target="_blank" href="http://digitalcollections.nypl.org/items/image_id/1558150">View complete item in NYPL Digital Collections</a>.</div>
+                                        <!--Rotate tool container-->
+                                        <div class="rotate">
+                                            <a href="#" class="rotate-image-button">
+                                                <!--Rotate tool image-->
+                                                <img src="http://www.oldnyc.org/images/rotate.png" height="29" width="29">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Window of Picture details like title and text, Errors send feedback tool,
+                                copy link, Tweer, FB like, FB share tools, Comment interface, Cooment Sortiing interface 
+                                and link on comment sorting plugin on FB developers page-->
+                            <div class="og-details">
+                                <!-- Loading details screen-->
+                                <div style="display: block;">
+                                    <!-- Details DIV-->
+                                    <div class="details">
+                                        <!-- Text description picture title-->
+                                        <div class="description">17-19 West 34th Street (Fifth Avenue - Sixth Avenue) No Date</div>
+                                        <!-- Here it use to be description text-->
+                                        <div class="text"></div>
+                                        <!-- Cannot realy understand where this text is displayed
+                                            Possibly it will work in the future-->
+                                        <div class="more-on-back" style="display:none">
+                                            There's no description available for this photo, but there may be some
+                                            text on the back of the image in the
+                                                If so, you can help OldNYC by
+                                            <a class="ocr-tool" href="/" target="_blank">transcribing it</a>.
+                                                            <a class="nypl" href="/" target="_blank">NYPL Digital Collections</a>.
+                                        </div>
+                                        <!-- Here we can leave feedback to this Picture-->
+                                        <div class="feedback-link">Errors? <a href="#" class="feedback-button">Send feedback</a></div>
+                                        <!-- Buttons for social network and copy link-->
+                                        <div class="social">
+                                            <!-- Button for modal window link copy to buffer-->
+                                            <div class="copy-link"> <!--EV-->
+                                                <span class="octicon octicon-clippy"></span>
+                                                <a href="#" class="email-share">Copy Link</a>
+                                            </div>
+                                            <!-- Tweet button-->
+                                            <div class="tweet">
+                                                <iframe data-url="https://www.oldnyc.org/#g:40.749604,-73.985703" src="https://platform.twitter.com/widgets/tweet_button.781f4f0ed6951ea86890554cec78adec.en.html#_=1448454991419&amp;count=none&amp;dnt=false&amp;id=twitter-widget-1&amp;lang=en&amp;original_referer=https%3A%2F%2Fwww.oldnyc.org%2F%231558150&amp;size=m&amp;text=17-19%20West%2034th%20Street%20(Fifth%20Avenue%20-%20Sixth%20Avenue)%20-%20&amp;type=share&amp;url=https%3A%2F%2Fwww.oldnyc.org%2F%23g%3A40.749604%2C-73.985703&amp;via=Old_NYC%20%40NYPL" title="Twitter Tweet Button" style="position: static; visibility: visible; width: 61px; height: 20px;" class="twitter-share-button twitter-share-button-rendered twitter-tweet-button" allowtransparency="true" scrolling="no" id="twitter-widget-1" frameborder="0"></iframe>
+                                            </div>
+                                            <!-- Facebook like and share Button-->
+                                            <div class="facebook-holder">
+                                                <fb:like fb-iframe-plugin-query="action=like&amp;app_id=598168753565519&amp;container_width=0&amp;href=http%3A%2F%2Fwww.oldnyc.org%2F%231558150&amp;layout=button&amp;locale=en_US&amp;sdk=joey&amp;share=true&amp;show_faces=false" fb-xfbml-state="rendered" class=" fb_iframe_widget" share="true" show_faces="false" action="like" layout="button" href="http://www.oldnyc.org/#1558150">
+                                                    <span style="vertical-align: bottom; width: 92px; height: 20px;">
+                                                        <iframe class="" src="https://www.facebook.com/v2.3/plugins/like.php?action=like&amp;app_id=598168753565519&amp;channel=https%3A%2F%2Fs-static.ak.facebook.com%2Fconnect%2Fxd_arbiter%2FTlA_zCeMkxl.js%3Fversion%3D41%23cb%3Df20147b1afd067e%26domain%3Dwww.oldnyc.org%26origin%3Dhttps%253A%252F%252Fwww.oldnyc.org%252Ff1eb181be42e214%26relation%3Dparent.parent&amp;container_width=0&amp;href=http%3A%2F%2Fwww.oldnyc.org%2F%231558150&amp;layout=button&amp;locale=en_US&amp;sdk=joey&amp;share=true&amp;show_faces=false" style="border: medium none; visibility: visible; width: 92px; height: 20px;" title="fb:like Facebook Social Plugin" scrolling="no" allowfullscreen="true" allowtransparency="true" name="f1c73d53ab5d3de" frameborder="0" height="1000px" width="1000px">
+                                                        </iframe>
+                                                    </span>
+                                                </fb:like>
+                                            </div>
+                                        </div>
+                                        <!-- Comments via Facebook interface-->
+                                        <div class="comments">
+                                            <fb:comments class="fb_iframe_widget" fb-xfbml-state="rendered" data-version="v2.3" data-href="http://www.oldnyc.org/#1558150" data-width="396" data-numposts="5" data-colorscheme="light">
+                                                <span style="height: 173px; width: 396px;">
+                                                    <iframe src="https://www.facebook.com/plugins/comments.php?api_key=598168753565519&amp;channel_url=https%3A%2F%2Fs-static.ak.facebook.com%2Fconnect%2Fxd_arbiter%2FTlA_zCeMkxl.js%3Fversion%3D41%23cb%3Df375f646eb13c1c%26domain%3Dwww.oldnyc.org%26origin%3Dhttps%253A%252F%252Fwww.oldnyc.org%252Ff1eb181be42e214%26relation%3Dparent.parent&amp;colorscheme=light&amp;href=http%3A%2F%2Fwww.oldnyc.org%2F%231558150&amp;locale=en_US&amp;numposts=5&amp;sdk=joey&amp;skin=light&amp;version=v2.3&amp;width=396" class="fb_ltr" title="Facebook Social Plugin" style="border: medium none; overflow: hidden; height: 173px; width: 396px;" scrolling="no" name="f37d6957c0e7b2a" id="f1d9688fad16462">
+                                                    </iframe>
+                                                </span>
+                                            </fb:comments>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- When we click feedback button in modal window we will get interface for feedback-->
+                                    <div class="feedback" style="display: none;">
+                                        <!-- Back link arriving us on previous page-->
+                                        <p><a class="back" href="#">← back</a></p>
+                                        <!-- Simle title of feedback-->
+                                        <p>Tell us more about this image!</p>
+                                        <!-- Four buttons-->
+                                        <button feedback="cut-in-half">It's only part of an image</button>
+                                        <button feedback="large-border">It has an excessively large border</button>
+                                        <button feedback="multiples">It's actually multiple images</button>
+                                        <button feedback="wrong-location">It's in the wrong location</button>
+                                        <!-- Suggest date form-->
+                                        <p class="suggest-date">Suggest a date:
+                                            <input placeholder="Sept. 7, 1941" type="text">
+                                            <!-- Suggesr button-->
+                                            <button feedback-param="true" feedback="date">Suggest</button>
+                                        </p>
+                                        <p></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- PREVIOUS BUTTON-->
+                        <div class="og-previous"></div> <!--EV-->
+                        <!-- NEXT BUTTONN-->
+                        <div class="og-next"></div> <!--EV-->
+                    </div>
+                </li>
+
+                <!--Next Picture Icon-->
+                <li style="">
+                    <a href="#" data-largesrc="http://oldnyc-assets.nypl.org/600px/1507753-a.jpg">
+                        <img src="http://oldnyc-assets.nypl.org/thumb/1507753-a.jpg" height="200" width="155">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+
+
+    </body>
+</html>
+

@@ -1,0 +1,6 @@
+# Do not remove this line, otherwise mod_rewrite rules will stop working
+RewriteBase /
+<IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin http://www.timemachine.comuv.com  
+    Header set Access-Control-Allow-Credentials true
+</IfModule>
